@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// TODO: create a function to send request to the server to get the data
+class connectionExample extends React.Component {
+  componentDidMount(): void {
+    // TODO: send request to the server to get the data
+    fetch('http://localhost:8000/api/')
+      .then(response => response.json())
+      .then(data => console.log(data));
+  }
+  render(){
+    return(
+      <div>
+        <h1>Connection Example</h1>
+      </div>
+    );
+  }
 }
 
-export default App;
+
+export default connectionExample;
