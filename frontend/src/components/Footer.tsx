@@ -67,7 +67,7 @@ function Copyright(props: any) {
 
 const footers = [
   {
-    title: "Company",
+    title: "JSU MS",
     description: ["Team", "History", "Contact us", "Locations"],
   },
   {
