@@ -2,7 +2,7 @@ import React from "react";
 import './App.css';
 
 // TODO: create a function to send request to the server to get the data
-class connectionExample extends React.Component {
+class ConnectionExample extends React.Component {
   componentDidMount(): void {
     // TODO: send request to the server to get the data
     fetch('http://localhost:8000/api/')
@@ -19,4 +19,4 @@ class connectionExample extends React.Component {
 }
 
 
-export default connectionExample;
+export default ConnectionExample;

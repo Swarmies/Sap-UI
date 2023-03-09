@@ -23,5 +23,4 @@ RUN npm install react-scripts@3.4.1 -g
 # copying everything in local directory to the work directory of the container
 COPY . ./
 
-#  expose port to the local host
-EXPOSE 3000
+CMD ["npm", "test"]
