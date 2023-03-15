@@ -7,8 +7,6 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import SignIn from "../SignIn";
 
-
-
 function Header() {
   return (
     <React.Fragment>
