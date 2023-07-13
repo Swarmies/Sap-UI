@@ -40,7 +40,7 @@ You can run the command below to run the tests
 npm test
 ```
 
-## Installing application as a root user
+## Installing the application as a root user
 
 Note: we are using an ash shell therefore you can log in to the root user once you have logged into the container by using
 
@@ -50,7 +50,27 @@ su -
 
 ## Running in debug mode
 
-There is a launch.json file in the .vscode folder. You can use that to run the frontend in debug mode. you can put breakpoints in the code and debug the code.
+There is a launch.json file in the .vscode folder. You can use that to run the front end in debug mode. you can put breakpoints in the code and debug the code.
+
+### package related issues
+
+If you have package-related issues, you can first see what package is causing the problem. Using
+
+```ash
+npmvet -r inlinetable
+```
+
+```ash
+npm outdate
+```
+
+### update/install a package
+
+1. uninstall using `npm uninstall <packagename>`
+2. remove the npm-shrinkwrap file `rm npm-shrinkwrap`
+3. modify the package.json to the specific package version or install the new package
+4. using `npm i` or `npm i <packagename>` depending upon step 3 specific
+5. finally use the `npm shrinkwrap --dev` to create the npm-shrinkwrap.json file again
 
 ### Break down into end-to-end tests
 

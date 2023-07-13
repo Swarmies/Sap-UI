@@ -20,6 +20,15 @@ RUN npm install -g
 # Intalling react 
 RUN npm install react-scripts@3.4.1 -g 
 
+
+COPY install-dev-packages.sh ./
+RUN chmod +x install-dev-packages.sh
+RUN /bin/ash install-dev-packages.sh
+
+
+# install npmvet
+RUN npm install npmvet -g 
+
 # copying everything in local directory to the work directory of the container
 COPY . ./
 
