@@ -1,12 +1,8 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "ES6",
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["ES6", "dom", "dom.iterable", "esnext"],
+    "rootDir": "src",
     "declaration": true,
     "outDir": "types",
     "allowJs": true,
@@ -23,7 +19,5 @@
     "jsx": "preserve",
     "noEmit": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "types"]
 }
