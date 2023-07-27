@@ -50,7 +50,7 @@ su -
 
 ## Running in debug mode
 
-There is a launch.json file in the .vscode folder. You can use that to run the front end in debug mode. you can put breakpoints in the code and debug the code.
+There is a `launch.json` file inside the `.vscode` folder. There are `Debug UI` and `Debug Typescript(UI)` pre-defined options that run the frontend in debug mode. you can launch one of the options, put breakpoints in the code and step through the code line by line.
 
 ### package related issues
 
@@ -70,7 +70,14 @@ npm outdate
 2. remove the npm-shrinkwrap file `rm npm-shrinkwrap`
 3. modify the package.json to the specific package version or install the new package
 4. using `npm i` or `npm i <packagename>` depending upon step 3 specific
-5. finally use the `npm shrinkwrap --dev` to create the npm-shrinkwrap.json file again
+5. finally use the `npm shrinkwrap --include=dev` to create the npm-shrinkwrap.json file again
+
+### Fix npm issues
+
+1. `npm cache clean --force`
+2. `rm -rf node_modules`
+3. `rm package-lock.json` or `rm npm-shrinkwrap.json` depending on what you have locally
+4. `npm install`
 
 ### Break down into end-to-end tests
 
