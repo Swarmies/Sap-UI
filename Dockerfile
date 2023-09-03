@@ -6,7 +6,7 @@ FROM node:18-alpine
 # USER appuser
 
 # defining the work directory
-WORKDIR /workspace/frontend
+WORKDIR /workspace
 
 # copy all the package files to the container
 COPY package.json ./
