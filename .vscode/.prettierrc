@@ -1,4 +1,13 @@
 {
   "tabWidth": 2,
-  "useTabs": false
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
 }

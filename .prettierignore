@@ -2,6 +2,7 @@
 
 node_modules/
 build/
+htmlcov/*
 dist/
 coverage/
 
@@ -28,7 +29,7 @@ yarn.lock
 *.ts
 
 # Others
-
 *.json
 *.html
 *.css
+

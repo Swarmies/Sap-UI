@@ -1,0 +1,23 @@
+version: "3.3"
+
+services:
+  ui:
+    # restart: always
+    build: .
+    volumes:
+      - .:/workspace/
+      - ./node_modules:/workspace/node_modules
+    command: npm run start
+    ports:
+      - "3000:3000"
+      - "9229:9229"
+    stdin_open: true
+    tty: true
+
+volumes:
+  postgresData:
+  frontend:
+    driver: local
+# networks:
+#   db-net:
+#     driver: bridge
