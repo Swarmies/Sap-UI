@@ -1,19 +1,19 @@
-import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
+import * as React from "react";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import CssBaseline from "@mui/material/CssBaseline";
 // import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { SyntheticEvent, useState } from 'react';
-import { FormControl, Input, InputLabel } from '@mui/material';
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { SyntheticEvent, useState } from "react";
+import { FormControl, Input, InputLabel } from "@mui/material";
 
 interface State {
   email: string;
@@ -27,19 +27,19 @@ interface Props {
 
 const theme = createTheme();
 
-// TODO: console log and check in the input are 
+// TODO: console log and check in the input are
 // begin send at each stage
 export default function SignIn(props: Props) {
   const [state, setState] = useState<State>({
-    email: '',
-    password: '',
+    email: "",
+    password: "",
     rememberMe: false,
   });
 
   const handleChange = (event: SyntheticEvent) => {
     const target = event.target as HTMLInputElement;
     const name = target.name;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.type === "checkbox" ? target.checked : target.value;
 
     setState({
       ...state,
@@ -59,18 +59,23 @@ export default function SignIn(props: Props) {
         <Box
           sx={{
             marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
-          <Box component="form" noValidate sx={{ mt: 1 }} onSubmit={handleSubmit}>
+          <Box
+            component="form"
+            noValidate
+            sx={{ mt: 1 }}
+            onSubmit={handleSubmit}
+          >
             <FormControl>
               <InputLabel htmlFor="email">Email Address</InputLabel>
               <Input
@@ -122,15 +127,18 @@ export default function SignIn(props: Props) {
                 <Checkbox
                   value={state.rememberMe}
                   color="primary"
-                  name='rememberMe'
+                  name="rememberMe"
                   onChange={handleChange}
-                />}
+                />
+              }
               label="Remember me"
             />
             <Button
               type="submit"
-              fullWidth variant="contained"
-              sx={{ mt: 3, mb: 2 }}>
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+            >
               Sign In
             </Button>
             <Grid container>

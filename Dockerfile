@@ -1,7 +1,8 @@
 # base image
 FROM node:18-alpine
 
-# set the user to non-root
+# TODO: investigate why this is not working
+# https://www.baeldung.com/linux/docker-alpine-add-user
 # RUN adduser -D appuser -u 1001
 # USER appuser
 

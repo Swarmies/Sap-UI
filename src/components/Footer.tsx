@@ -6,7 +6,6 @@ import Link from "@mui/material/Link";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 
-
 function Copyright(props: any) {
   return (
     <Typography
@@ -95,14 +94,14 @@ const footers = [
   },
 ];
 
-function Footer() : JSX.Element {
+function Footer(): JSX.Element {
   return (
     <React.Fragment>
       <GlobalStyles
         styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }}
       />
       <CssBaseline />
-      
+
       {/* Footer */}
       <Container
         maxWidth="md"
@@ -137,6 +136,5 @@ function Footer() : JSX.Element {
     </React.Fragment>
   );
 }
-
 
 export default Footer;

@@ -17,12 +17,7 @@ function Header() {
         sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
       >
         <Toolbar sx={{ flexWrap: "wrap" }}>
-          <Typography
-            variant="h6"
-            color="inherit"
-            noWrap
-            sx={{ flexGrow: 1 }}
-          >
+          <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
             Company name
           </Typography>
           <nav>
@@ -51,7 +46,11 @@ function Header() {
               Stuff
             </Link>
           </nav>
-          <Button onClick={signInHandler} variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+          <Button
+            onClick={signInHandler}
+            variant="outlined"
+            sx={{ my: 1, mx: 1.5 }}
+          >
             Login
           </Button>
         </Toolbar>
@@ -61,26 +60,20 @@ function Header() {
 }
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 
 const signInHandler = () => {
   console.log("signInHandler");
   root.render(
     <React.StrictMode>
-      < SignIn onSignIn={function (email: string, password: string): void {
-        throw new Error("Function not implemented.");
-      }} />
+      <SignIn
+        onSignIn={function (email: string, password: string): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
     </React.StrictMode>
   );
-}
-
+};
 
 export default Header;
-
-
-
-
-
-
-

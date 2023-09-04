@@ -4497,9 +4497,7 @@
     },
     "node_modules/ansi-html-community": {
       "version": "0.0.8",
-      "engines": [
-        "node >= 0.8.0"
-      ],
+      "engines": ["node >= 0.8.0"],
       "license": "Apache-2.0",
       "bin": {
         "ansi-html": "bin/ansi-html"
@@ -7663,9 +7661,7 @@
       "version": "2.3.2",
       "license": "MIT",
       "optional": true,
-      "os": [
-        "darwin"
-      ],
+      "os": ["darwin"],
       "engines": {
         "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
       }

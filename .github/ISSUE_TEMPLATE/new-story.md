@@ -7,15 +7,15 @@ assignees: kirubeltadesse
 
 ---
 
-# Description 
+# Description
 
-Add information about the story 
+Add information about the story
 
-## Acceptable Criteria 
+## Acceptable Criteria
 
-list of requirements for this story
+List of requirements for this story
 
-## Related Story 
+## Related Story
 
 Does this relate to any previous work
 
